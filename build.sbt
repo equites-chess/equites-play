@@ -10,7 +10,10 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
 scalaVersion := "2.11.1"
 
-resolvers += "bintray/fthomas" at "http://dl.bintray.com/fthomas/maven/"
+resolvers ++= Seq(
+  "bintray/fthomas" at "http://dl.bintray.com/fthomas/maven/",
+  "bintray/scalaz" at "http://dl.bintray.com/scalaz/releases"
+)
 
 libraryDependencies += "eu.timepit" %% "equites-core" % "0.0.0"
 
