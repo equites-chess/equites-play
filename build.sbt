@@ -9,3 +9,5 @@ scalaVersion := "2.11.1"
 resolvers += "bintray/fthomas" at "http://dl.bintray.com/fthomas/maven/"
 
 libraryDependencies += "eu.timepit" %% "equites-core" % "0.0.0"
+
+scalariformSettings
