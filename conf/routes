@@ -1,0 +1,16 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /   controllers.Application.knightstour
+
+GET     /api/knightstour/static.json        controllers.api.KnightsTourApi.staticTourAsJson
+GET     /api/knightstour/random.json        controllers.api.KnightsTourApi.randomTourAsJson
+GET     /api/knightstour/warnsdorff.json    controllers.api.KnightsTourApi.warnsdorffTourAsJson
+GET     /api/knightstour/warnsdorff2.json   controllers.api.KnightsTourApi.randomWarnsdorffTourAsJson
+
+GET     /api/fen/figurine/$placement<.*>    controllers.api.FenApi.toFigurineBoard(placement: String)
+GET     /api/fen/letter/$placement<.*>      controllers.api.FenApi.toLetterBoard(placement: String)
+GET     /api/fen/wiki/$placement<.*>        controllers.api.FenApi.toWikiBoard(placement: String)
+
+GET     /assets/*file   controllers.Assets.at(path="/public", file)

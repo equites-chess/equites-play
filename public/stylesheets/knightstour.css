@@ -1,0 +1,18 @@
+body {
+  background: #333;
+  color: #FFF;
+  font-family: sans-serif;
+  text-align: center;
+}
+a {
+  color: #FFF;
+}
+.centered {
+  margin: 0 auto;
+  margin-top: 15px;
+  text-align: left;
+}
+#canvas {
+  padding: 0;
+  width: 600px;
+}
