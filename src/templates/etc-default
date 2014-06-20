@@ -1,0 +1,3 @@
+-J-Xms128m -J-Xmx256m
+
+-Dpidfile.path=/var/run/${{app_name}}/play.pid
