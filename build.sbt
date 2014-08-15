@@ -8,7 +8,7 @@ version := "0.0.0"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-scalaVersion := "2.11.1"
+scalaVersion := "2.11.2"
 
 resolvers ++= Seq(
   "bintray/fthomas" at "http://dl.bintray.com/fthomas/maven/",
